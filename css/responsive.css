@@ -63,10 +63,16 @@
         width: 61%;
     }
 
-    @media (max-width: 1063px) {
+}
+
+@media (max-width: 1063px) {
         .wrap{
             width: 90%;
             margin: 0px auto;
+        }
+
+        #banner h1{
+        width: 100%;
         }
     
         .card {
@@ -82,8 +88,65 @@
         }
     
         #lateral{
-            width: 25%;
+            width: 30%;
         }
+
+        aside h3{
+            font-size: 25px;
+            letter-spacing: 2px;
+            padding-left: 15px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        #search{
+            width: 60%;
+            height: 30px;
+            margin: 10px auto;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 1px 1px 4px #ccc inset;
+        }
+
+        #lateral input[type="text"]{
+            width: 70%;
+            height: 30px;
+            border: none;
+            padding-left: 5px;
+            border-radius: 5px;
+            background-color: transparent;
+            color: #CCC;
+            transition: all 300ms;
+        }
+
+        #lateral input[type="text"]:focus{
+            color: #555;
+        
+        }
+
+        #login input[type="email"],
+        #login input[type="password"]{
+            display: block;
+            margin: 0px auto;
+            margin-top: 20px;
+            width: 70%;
+            height: 30px;
+            border: 1px solid #ccc;
+            box-shadow: 1px 1px 1px #ccc inset;
+            border-radius: 5px;
+            padding-left: 35px;
+        }
+
+        #login input[type="submit"],
+        #login input[type="button"],
+        #login input[type="reset"],
+        #login button{
+            width: 80px;
+            height: 35px;
+            margin-top: 20px;
+        }
+
         #articles{
             width: 61%;
         }
@@ -97,7 +160,170 @@
         #footer h5{
             font-size: 20px;
         }
-    }
-   
+}
+
+@media (max-width: 867px) {
+
+
+        #banner h1{
+            font-size: 30px;
+        }
+
+        .card{
+            height: auto;
+        }
+
+        .card .description{
+            display: none;
+        }
+
+        #login input[type="reset"]{
+            display: none;
+        }
+
+       
+
+        #footer ul{
+            font-size: 15px;
+        }
+
+        #footer ul li a{
+            height: 30px;
+        
+        }
+
+        #footer iframe{
+            height: 200px;
+        
+        }
+
+        #footer img {
+            margin-bottom: 15px;
+            max-width: 100%;
+        }
 
 }
+
+@media (max-width: 742px) {
+
+    #header{
+        width: 100%;
+        height: 120px;
+    }
+
+    #logo{
+        float: none;
+        margin: 0px auto;
+    }
+
+    #menu {
+        clear: both;
+        float: none;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    #lateral{
+        float: none;
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    #lateral input[type="text"] {
+        width: 90%;
+    }
+
+    #login input[type="email"], #login input[type="password"] {  
+        width: 90%;
+    }
+    
+    #articles{
+        float: none;
+        width: 100%;
+        margin: 0px auto;
+        
+    }
+
+    #footer{
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    #footer .wrap > div{
+        width: 100%;
+        margin: 0px auto;
+        margin-top: 20px;
+    } 
+
+    #footer h5{
+        font-size: 22px;
+    }
+
+}
+
+@media (max-width: 623px) {
+
+    #header{
+        width: 100%;
+        height: 220px;
+        padding-top: 10px;
+    }
+
+    #logo{
+        float: left;
+        margin-top: 5px;
+    }
+
+    #menu {
+        clear: both;
+        float: none;
+        width: 100%;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    #menu ul li{
+        width: 100%;
+        text-align: left;
+        line-height: 40px;
+    }
+
+    #banner{
+        height: 50px;
+        margin: 5px auto;
+    }
+
+    #banner h1{
+        font-size: 20px;
+        background-position: 100px -907px;
+    }
+
+    
+    .card{    
+        margin: 6px;
+    }
+
+    .card .icon {
+        font-size: 30px;
+    }
+
+    .card .category{
+        font-size: 10px;
+    }
+    #lateral input[type="text"] {
+        width: 80%;
+    }
+
+    #login input[type="email"], #login input[type="password"] {  
+        width: 80%;
+    }
+
+    #articles .data {
+        float: none;
+        margin: 4px;
+        border-radius: 0px;
+    }
+}
+
+
+
